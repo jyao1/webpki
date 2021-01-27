@@ -68,7 +68,7 @@ alloc = ["ring/alloc"]
 std = ["alloc"]
 
 [dependencies]
-ring = { path="../ring", default-features = false }
+ring = { git="https://github.com/jyao1/ring", branch="uefi_support", default-features = false }
 untrusted = "0.7.1"
 
 [dev-dependencies]
