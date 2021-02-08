@@ -52,7 +52,7 @@ mod verify_cert;
 pub use error::Error;
 pub use name::{DnsNameRef, InvalidDnsNameError};
 
-#[cfg(feature = "std")]
+#[cfg(feature = "alloc")]
 pub use name::DnsName;
 
 pub use signed_data::{
