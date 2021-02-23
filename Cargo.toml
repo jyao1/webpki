@@ -68,11 +68,6 @@ std = ["alloc"]
 
 [dependencies]
 untrusted = "0.7.1"
-
-[target.'cfg(not(target_os = "uefi"))'.dependencies]
-ring = { version = "0.16.19", default-features = false }
-
-[target.'cfg(target_os = "uefi")'.dependencies]
 ring = { git = "https://github.com/jyao1/ring", branch="uefi_support", default-features = false }
 
 [dev-dependencies]

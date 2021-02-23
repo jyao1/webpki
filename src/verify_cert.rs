@@ -254,7 +254,7 @@ fn check_basic_constraints(
 
 #[derive(Clone, Copy)]
 pub struct KeyPurposeId {
-    oid_value: untrusted::Input<'static>,
+    pub oid_value: untrusted::Input<'static>,
 }
 
 // id-pkix            OBJECT IDENTIFIER ::= { 1 3 6 1 5 5 7 }

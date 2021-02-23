@@ -46,7 +46,7 @@ extern crate alloc;
 mod der;
 
 mod calendar;
-mod cert;
+pub mod cert;
 mod end_entity;
 mod error;
 mod name;
@@ -54,7 +54,7 @@ mod signed_data;
 mod time;
 mod trust_anchor;
 
-mod verify_cert;
+pub mod verify_cert;
 
 pub use {
     end_entity::EndEntityCert,
